@@ -1,0 +1,15 @@
+127.0.0.1 - - [15/May/2024:19:04:31 +0530] "GET / HTTP/1.1" 404 752
+127.0.0.1 - - [15/May/2024:19:04:48 +0530] "GET /CookiesDemo/ HTTP/1.1" 200 1265
+127.0.0.1 - - [15/May/2024:19:04:48 +0530] "GET /favicon.ico HTTP/1.1" 404 763
+127.0.0.1 - - [15/May/2024:19:05:03 +0530] "GET /CookiesDemo/setcooky?txtUname=Shailesh&radSite=f HTTP/1.1" 200 613
+127.0.0.1 - - [15/May/2024:19:05:15 +0530] "GET /CookiesDemo/getcooky HTTP/1.1" 200 701
+127.0.0.1 - - [15/May/2024:19:06:40 +0530] "GET /CookiesDemo/getcooky HTTP/1.1" 500 1248
+127.0.0.1 - - [15/May/2024:19:08:23 +0530] "GET / HTTP/1.1" 404 752
+127.0.0.1 - - [15/May/2024:19:08:29 +0530] "GET /CookiesDemo/ HTTP/1.1" 200 1265
+127.0.0.1 - - [15/May/2024:19:08:29 +0530] "GET /favicon.ico HTTP/1.1" 404 763
+127.0.0.1 - - [15/May/2024:19:08:37 +0530] "GET /CookiesDemo/setcooky?txtUname=Shailesh&radSite=i HTTP/1.1" 200 613
+127.0.0.1 - - [15/May/2024:19:08:41 +0530] "GET /CookiesDemo/getcooky HTTP/1.1" 200 702
+127.0.0.1 - - [15/May/2024:19:08:53 +0530] "GET /CookiesDemo/getcooky HTTP/1.1" 200 702
+127.0.0.1 - - [15/May/2024:19:08:53 +0530] "GET /favicon.ico HTTP/1.1" 404 763
+127.0.0.1 - - [15/May/2024:19:13:53 +0530] "GET /CookiesDemo/getcooky HTTP/1.1" 500 1248
+127.0.0.1 - - [15/May/2024:19:13:53 +0530] "GET /favicon.ico HTTP/1.1" 404 763

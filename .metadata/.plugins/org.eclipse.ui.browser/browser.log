@@ -1,0 +1,45 @@
+
+May 14, 2024 18:45:08.75 NEW SESSION
+May 14, 2024 18:45:08.77 ATTENTION: default value of option mesa_glthread overridden by environment.
+May 14, 2024 18:45:08.83 ATTENTION: default value of option mesa_glthread overridden by environment.
+May 14, 2024 19:00:15.28 ATTENTION: default value of option mesa_glthread overridden by environment.
+May 14, 2024 19:00:15.33 ATTENTION: default value of option mesa_glthread overridden by environment.
+May 14, 2024 19:02:37.10 [3943] Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
+May 14, 2024 19:30:50.25 ATTENTION: default value of option mesa_glthread overridden by environment.
+May 14, 2024 19:30:50.30 ATTENTION: default value of option mesa_glthread overridden by environment.
+May 14, 2024 19:31:40.83 ATTENTION: default value of option mesa_glthread overridden by environment.
+May 14, 2024 19:31:40.88 ATTENTION: default value of option mesa_glthread overridden by environment.
+May 14, 2024 19:38:39.80 ATTENTION: default value of option mesa_glthread overridden by environment.
+May 14, 2024 19:38:39.84 ATTENTION: default value of option mesa_glthread overridden by environment.
+
+May 15, 2024 19:04:33.20 NEW SESSION
+May 15, 2024 19:04:33.22 ATTENTION: default value of option mesa_glthread overridden by environment.
+May 15, 2024 19:04:33.28 ATTENTION: default value of option mesa_glthread overridden by environment.
+May 15, 2024 19:06:33.77 [3491] Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
+May 15, 2024 19:08:24.49 ATTENTION: default value of option mesa_glthread overridden by environment.
+May 15, 2024 19:08:24.53 ATTENTION: default value of option mesa_glthread overridden by environment.
+
+May 17, 2024 19:51:33.52 NEW SESSION
+May 17, 2024 19:51:33.53 ATTENTION: default value of option mesa_glthread overridden by environment.
+May 17, 2024 19:51:33.57 ATTENTION: default value of option mesa_glthread overridden by environment.
+
+May 20, 2024 19:17:53.91 NEW SESSION
+May 20, 2024 19:17:53.92 ATTENTION: default value of option mesa_glthread overridden by environment.
+May 20, 2024 19:17:54.00 ATTENTION: default value of option mesa_glthread overridden by environment.
+May 20, 2024 19:21:15.95 [6746] Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
+May 20, 2024 19:24:50.11 ATTENTION: default value of option mesa_glthread overridden by environment.
+May 20, 2024 19:24:50.16 ATTENTION: default value of option mesa_glthread overridden by environment.
+May 20, 2024 19:27:18.86 [7435] Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
+May 20, 2024 19:37:45.59 ATTENTION: default value of option mesa_glthread overridden by environment.
+May 20, 2024 19:37:45.63 ATTENTION: default value of option mesa_glthread overridden by environment.
+May 20, 2024 19:38:32.46 [8455] Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
+May 20, 2024 19:41:41.95 ATTENTION: default value of option mesa_glthread overridden by environment.
+May 20, 2024 19:41:41.99 ATTENTION: default value of option mesa_glthread overridden by environment.
+May 20, 2024 19:42:09.91 [8967] Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
+May 20, 2024 19:44:27.14 ATTENTION: default value of option mesa_glthread overridden by environment.
+May 20, 2024 19:44:27.19 ATTENTION: default value of option mesa_glthread overridden by environment.
+May 20, 2024 19:45:21.03 [9372] Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
+
+May 23, 2024 19:40:34.20 NEW SESSION
+May 23, 2024 19:40:34.20 ATTENTION: default value of option mesa_glthread overridden by environment.
+May 23, 2024 19:40:34.31 ATTENTION: default value of option mesa_glthread overridden by environment.

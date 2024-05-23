@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Input Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<form class="form" action="accept" method="get">
+			<div class="form-group">
+				<label>Enter Amount In Rupees</label>
+				<input type="text" name="txtAmount" 
+				placeholder="Amount In Rupees" class="form-control">
+			</div>
+			<div class="radio">
+				<label class="control-label">
+				<input type="radio" name="radCurrency" value="d">
+				Dollar
+				</label>
+			</div>
+			<div class="radio">
+				<label class="control-label">
+				<input type="radio" name="radCurrency" value="p">
+				Pound
+				</label>
+			</div>
+			<input type="submit" value="CLICK TO CONVERT" 
+			class="btn btn-block btn-success">
+		</form>	
+	</div>
+</body>
+</html>
+
+
+
+
+

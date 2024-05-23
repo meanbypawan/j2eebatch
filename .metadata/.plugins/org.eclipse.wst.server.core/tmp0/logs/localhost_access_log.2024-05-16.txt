@@ -1,0 +1,11 @@
+127.0.0.1 - - [16/May/2024:19:43:47 +0530] "GET / HTTP/1.1" 404 752
+127.0.0.1 - - [16/May/2024:19:44:06 +0530] "GET /JdbcLoginDemo/ HTTP/1.1" 200 1136
+127.0.0.1 - - [16/May/2024:19:44:06 +0530] "GET /favicon.ico HTTP/1.1" 404 763
+127.0.0.1 - - [16/May/2024:19:44:16 +0530] "GET /JdbcLoginDemo/register.html HTTP/1.1" 200 1088
+127.0.0.1 - - [16/May/2024:19:44:36 +0530] "GET /JdbcLoginDemo/adduser?txtUname=abhi%40gmail.com&txtPass=abhi%40123 HTTP/1.1" 302 -
+127.0.0.1 - - [16/May/2024:19:44:36 +0530] "GET /JdbcLoginDemo/success?msg=regsuccess HTTP/1.1" 200 1136
+127.0.0.1 - - [16/May/2024:19:46:32 +0530] "GET / HTTP/1.1" 404 752
+127.0.0.1 - - [16/May/2024:19:46:53 +0530] "GET /JdbcLoginDemo/adduser?txtUname=abhi%40gmail.com&txtPass=abhi%40123 HTTP/1.1" 302 -
+127.0.0.1 - - [16/May/2024:19:46:53 +0530] "GET /JdbcLoginDemo/success?msg=regsuccess HTTP/1.1" 200 1205
+127.0.0.1 - - [16/May/2024:19:47:53 +0530] "GET /JdbcLoginDemo/checkuser?txtUname=abhi%40gmail.com&txtPass=abhi%40123 HTTP/1.1" 302 -
+127.0.0.1 - - [16/May/2024:19:47:53 +0530] "GET /JdbcLoginDemo/home?username=abhi@gmail.com HTTP/1.1" 200 562

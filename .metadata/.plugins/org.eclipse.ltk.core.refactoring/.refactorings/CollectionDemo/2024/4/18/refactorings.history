@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;IdComparator.java&apos; to &apos;CollectionDemo/src/com.collectiondemo.comparator&apos;&#x0A;- Original project: &apos;CollectionDemo&apos;&#x0A;- Destination element: &apos;CollectionDemo/src/com.collectiondemo.comparator&apos;&#x0A;- Original element: &apos;com.collectiondemo.comparator.IdComparator.java&apos;" description="Copy compilation unit" destination="/src&lt;com.collectiondemo.comparator" element1="/src&lt;com.collectiondemo.comparator{IdComparator.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1714398309854" units="1" version="1.0"/>
+</session>

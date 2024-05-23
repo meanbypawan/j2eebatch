@@ -1,0 +1,265 @@
+1) create a database named as '24thapriladv'.
+
+	CREATE DATABASE 24thapriladv;
+	
+2) start using the database 24thapriladv.
+
+	USE 24thapriladv;
+	
+3) create a table named as dept with column deptno , dname and loc.
+
+	CREATE TABLE dept (
+		deptno INT PRIMARY KEY,
+		dname VARCHAR(15) NOT NULL UNIQUE,
+		loc VARCHAR(15) NOT NULL
+	);
+	
+4) create a table named as emp with columns eno, ename, job, age, sal, mgr, deptno.
+
+	 CREATE TABLE emp (
+	 	eno INT PRIMARY KEY,
+	 	ename VARCHAR(15) NOT NULL,
+	 	job VARCHAR(15) NOT NULL,
+	 	age INT NOT NULL,
+	 	sal INT NOT NULL,
+	 	mgr INT,
+	 	deptno INT
+	 );
+	 
+5) set deptno column of emp table as foreign key taken from deptno column of dept table.
+
+	ALTER TABLE emp
+		ADD FOREIGN KEY (deptno)
+			REFERENCES dept (deptno);
+			
+6) add a new column named as pan in emp table.
+
+	ALTER TABLE emp
+		ADD COLUMN pan
+			VARCHAR(15) NOT NULL;	
+			
+7) change width of column pan to 20 and allow it to store null.
+
+	ALTER TABLE emp
+		CHANGE COLUMN pan
+			pan VARCHAR(20);
+			
+8) remove column pan from emp table.
+
+	ALTER TABLE emp
+		DROP COLUMN pan;
+		
+9) remove table emp from database.
+
+	DROP TABLE emp;
+	
+10) remove database named as 24thapriladv.
+
+	DROP DATABASE 24thapriladv;
+	
+11) add some records into dept table.
+
+	INSERT INTO dept
+		VALUES (10,'sales','mumbai');
+		
+	INSERT INTO dept
+		VALUES (20,'hr','delhi') , 
+			(30,'production','indore') , 
+				(40,'r&d','pune');
+				
+12) add some records into emp table.					
+		
+	INSERT INTO emp
+		VALUES (1,'Sunil','manager',35,31000,4,10) , 
+			(2,'Amit','salesman',28,25000,1,10) , 
+				(3,'Sumit','manager',37,35000,4,20);	
+	
+	INSERT INTO emp
+		(eno,ename,job,age,sal)
+		 VALUES (4,'Ankit','president',53,56000);
+		 
+	INSERT INTO emp
+		VALUES (5,'Rajiv','clerk',25,20000,3,20) , 
+			(6,'Ganesh','manager',32,30000,4,30) , 
+				(7,'Nimit','peon',39,15000,6,30);		 
+	
+13) show details of all employees.
+
+	SELECT *
+		FROM emp;
+		
+14) show eno , name and job of all employees.
+
+	SELECT eno , ename , job
+		FROM emp;
+		
+15) show name , job and annual salary of all employees.
+
+	SELECT ename , job , sal * 12 AS 'annual salary'
+		FROM emp;
+		
+16) show details of all employees in ascending order of their age.
+
+	SELECT *
+		FROM emp
+			ORDER BY age;
+			
+17) show details of all employees in descending order of their salary.
+
+	SELECT *
+		FROM emp
+			ORDER BY sal DESC;
+			
+18) data of how many employees has been given in emp table?
+
+	SELECT COUNT(*) AS 'count of employees'
+		FROM emp;
+		
+19) data of how many departments has been given in emp table?
+
+	SELECT COUNT(DISTINCT(deptno)) 
+		AS 'count of departments'
+			FROM emp;
+			
+20) per department how many employees are present?
+
+	SELECT deptno , COUNT(*) AS 'count of employees'
+		FROM emp
+			WHERE deptno IS NOT NULL
+				GROUP BY deptno;
+				
+21) show name , salary and job of all such employees who earn more than 30000.
+
+	SELECT ename , job , sal
+		FROM emp
+			WHERE sal > 30000;
+
+22) show details of all such employees who have i as second last alphabet in their name.
+
+	SELECT *
+		FROM emp
+			WHERE ename LIKE '%i_';
+			
+23) show eno , name and job of all such employees who earn more than the average salary.
+
+	SELECT eno, ename , job
+		FROM emp
+			WHERE sal > 
+				(SELECT AVG(sal)
+					FROM emp);
+					
+24) who earns the highest salary?
+
+	SELECT ename
+		FROM emp
+			WHERE sal = 
+				(SELECT MAX(sal)
+					FROM emp);
+
+25) who earns the second highest salary?
+
+	SELECT ename
+		FROM emp
+			WHERE sal = 
+				(SELECT MAX(sal)
+					FROM emp
+						WHERE sal < 
+							(SELECT MAX(sal)
+								FROM emp));
+							
+26) who is manager of Mr. rajiv?
+
+	SELECT ename
+		FROM emp
+			WHERE eno = 
+				(SELECT mgr
+					FROM emp
+						WHERE ename
+							LIKE 'rajiv');
+							
+27) who is manager of Mr. rajiv? (Using self join)
+
+	SELECT m.ename
+		FROM emp r, emp m
+			WHERE r.ename LIKE 'rajiv'
+				AND r.mgr = m.eno;
+																
+28) who is manager of manager of Mr. rajiv? (Using self join)
+
+	SELECT mm.ename
+		FROM emp r, emp m, emp mm
+			WHERE r.ename LIKE 'rajiv'
+				AND r.mgr = m.eno
+					AND m.mgr = mm.eno;
+					
+29) What are numbers of departments for whom more than 2 employees are working?
+
+	SELECT deptno
+		FROM emp
+			GROUP BY deptno
+				HAVING COUNT(*) > 2;
+				
+30) In which city does Mr. rajiv work?
+
+	SELECT loc
+		FROM dept
+			WHERE deptno = 
+				(SELECT deptno
+					FROM emp
+						WHERE ename
+							LIKE 'rajiv');
+	
+31) What are names of departments for whom more than 2 employees are working?	
+	
+	SELECT dname
+		FROM dept
+			WHERE deptno IN 
+				(SELECT deptno
+					FROM emp
+						GROUP BY deptno
+							HAVING COUNT(*) > 2);
+							
+32) show details of employees who belong to department 10 or 20.
+
+	SELECT *
+		FROM emp
+			WHERE deptno = 10
+				OR deptno = 20;
+				
+	SELECT *
+		FROM emp
+			WHERE deptno 
+				IN (10,20);		
+				
+33) show eno,name,job,dname,loc,deptno for all employees.
+equi join :-
+	SELECT e.eno, e.ename, e.job, d.dname, d.loc, d.deptno
+		FROM emp e, dept d
+			WHERE e.deptno = d.deptno;
+			
+inner join :-			
+	SELECT e.eno, e.ename, e.job, d.dname, d.loc, d.deptno
+		FROM emp e INNER JOIN dept d
+			ON e.deptno = d.deptno;
+			
+34) show eno,name,job,dname,loc,deptno for all employees even if employee does not have department.
+
+	SELECT e.eno, e.ename, e.job, d.dname, d.loc, d.deptno
+		FROM emp e LEFT OUTER JOIN dept d
+			ON e.deptno = d.deptno;
+
+35) show eno,name,job,dname,loc,deptno for all employees even if department does not have employee.
+
+	SELECT e.eno, e.ename, e.job, d.dname, d.loc, d.deptno
+		FROM emp e RIGHT OUTER JOIN dept d
+			ON e.deptno = d.deptno;
+	
+36) Full Outer Join :-
+
+	SELECT e.eno, e.ename, e.job, d.dname, d.loc, d.deptno
+		FROM emp e LEFT OUTER JOIN dept d
+			ON e.deptno = d.deptno	
+	UNION		
+	SELECT e.eno, e.ename, e.job, d.dname, d.loc, d.deptno
+		FROM emp e RIGHT OUTER JOIN dept d
+			ON e.deptno = d.deptno;			

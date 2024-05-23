@@ -1,0 +1,6 @@
+127.0.0.1 - - [11/May/2024:19:30:20 +0530] "GET / HTTP/1.1" 404 752
+127.0.0.1 - - [11/May/2024:19:31:31 +0530] "GET /LifeCycleDemo/ HTTP/1.1" 404 770
+127.0.0.1 - - [11/May/2024:19:32:04 +0530] "GET /LifeCycleDemo/lifecycle HTTP/1.1" 200 -
+127.0.0.1 - - [11/May/2024:19:33:43 +0530] "GET /LifeCycleDemo/lifecycle HTTP/1.1" 200 -
+127.0.0.1 - - [11/May/2024:19:33:50 +0530] "GET /LifeCycleDemo/lifecycle HTTP/1.1" 200 -
+127.0.0.1 - - [11/May/2024:19:33:56 +0530] "GET /LifeCycleDemo/lifecycle HTTP/1.1" 200 -

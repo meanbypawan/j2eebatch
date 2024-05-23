@@ -1,0 +1,5 @@
+package com.usebeandemo.entity;
+
+public class User {
+
+}
