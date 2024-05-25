@@ -15,19 +15,17 @@
 <div class="container d-flex justify-content-center align-items-center" style="height:600px; width:100%;">
    <div class="sign-up-form" style="width:30%; height:300px; box-shadow: 0 0 10px grey">
       <div>
-         <h6 class="bg-dark text-center text-light">Sign up</h6>
+         <h6 class="bg-dark text-center text-light">Sign In</h6>
       </div>
-      <form method="post" action="registration_controller.jsp">
+      <form method="post" action="signin_controller.jsp">
       <div class="form p-2">
         <div class="form-group">
-          <input type="text" name="username" placeholder="Enter username" class="form-control"/>
-        </div>
-         <div class="form-group">
-          <input type="password" name="password" placeholder="Enter password" class="form-control"/>
-        </div>
-         <div class="form-group">
           <input type="email" name="email" placeholder="Enter Email" class="form-control"/>
         </div>
+        <div class="form-group">
+          <input type="password" name="password" placeholder="Enter password" class="form-control"/>
+        </div>
+         
          <div class="form-group">
            <button class="btn btn-primary" type="submit">Submit</button>
         </div>
