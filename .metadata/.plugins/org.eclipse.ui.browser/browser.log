@@ -48,3 +48,39 @@ May 23, 2024 19:52:11.63 [8873] Sandbox: Unexpected EOF, op 0 flags 00 path /pro
 May 25, 2024 18:38:54.92 NEW SESSION
 May 25, 2024 18:38:54.92 ATTENTION: default value of option mesa_glthread overridden by environment.
 May 25, 2024 18:38:54.99 ATTENTION: default value of option mesa_glthread overridden by environment.
+
+May 28, 2024 18:38:20.62 NEW SESSION
+May 28, 2024 18:38:20.62 ATTENTION: default value of option mesa_glthread overridden by environment.
+May 28, 2024 18:38:20.69 ATTENTION: default value of option mesa_glthread overridden by environment.
+
+Mar 02, 2023 18:31:15.01 NEW SESSION
+Mar 02, 2023 18:31:15.02 ATTENTION: default value of option mesa_glthread overridden by environment.
+Mar 02, 2023 18:31:15.09 ATTENTION: default value of option mesa_glthread overridden by environment.
+Mar 02, 2023 18:31:46.00 Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+Mar 02, 2023 18:32:19.04 Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+Mar 02, 2023 18:32:50.04 Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+Mar 02, 2023 18:33:22.24 Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+Mar 02, 2023 18:33:54.32 Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+Mar 02, 2023 18:34:28.92 Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+Mar 02, 2023 18:35:00.46 Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+Mar 02, 2023 18:35:31.46 Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+Mar 02, 2023 18:36:05.61 Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+Mar 02, 2023 18:36:36.61 Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+Mar 02, 2023 18:37:07.87 Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+Mar 02, 2023 18:37:39.68 Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+Mar 02, 2023 18:38:11.83 Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+Mar 02, 2023 18:38:42.97 Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+Mar 02, 2023 18:39:14.06 Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+Mar 02, 2023 18:39:47.32 Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+Mar 02, 2023 18:40:19.18 Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+Mar 02, 2023 18:40:50.18 Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+Mar 02, 2023 18:41:22.60 Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+Mar 02, 2023 18:41:53.61 Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+Mar 02, 2023 18:42:24.64 Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+Mar 02, 2023 18:42:55.64 Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+Mar 02, 2023 18:43:26.64 Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+Mar 02, 2023 18:43:57.83 Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+Mar 02, 2023 18:44:28.83 Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+Mar 02, 2023 18:44:59.83 Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+Mar 02, 2023 18:45:31.72 Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+Mar 02, 2023 18:46:03.77 Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servers>
-  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat v10.1 Server at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v10.1 Server at localhost" name="Tomcat v10.1 Server at localhost" runtime-id="Apache Tomcat v10.1" server-type="org.eclipse.jst.server.tomcat.101" server-type-id="org.eclipse.jst.server.tomcat.101" start-timeout="60" stop-timeout="15" testEnvironment="true" timestamp="16">
-    <list key="modules" value0="ExcDemo::org.eclipse.jst.jee.server:ExcDemo::jst.web::6.0" value1="UseBeanDemo::org.eclipse.jst.jee.server:UseBeanDemo::jst.web::6.0" value2="TestJsp::org.eclipse.jst.jee.server:TestJsp::jst.web::6.0" value3="JspApp::org.eclipse.jst.jee.server:JspApp::jst.web::6.0"/>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat v10.1 Server at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v10.1 Server at localhost" name="Tomcat v10.1 Server at localhost" runtime-id="Apache Tomcat v10.1" server-type="org.eclipse.jst.server.tomcat.101" server-type-id="org.eclipse.jst.server.tomcat.101" start-timeout="60" stop-timeout="15" testEnvironment="true" timestamp="17">
+    <list key="modules" value0="ExcDemo::org.eclipse.jst.jee.server:ExcDemo::jst.web::6.0" value1="UseBeanDemo::org.eclipse.jst.jee.server:UseBeanDemo::jst.web::6.0" value2="TestJsp::org.eclipse.jst.jee.server:TestJsp::jst.web::6.0" value3="JspApp::org.eclipse.jst.jee.server:JspApp::jst.web::6.0" value4="TestMVC::org.eclipse.jst.jee.server:TestMVC::jst.web::6.0"/>
   </server>
 </servers>
