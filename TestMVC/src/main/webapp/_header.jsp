@@ -14,7 +14,18 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Contact us</a>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link" href="#">Add user</a>
       </li>    
+      <li class="nav-item">
+        <a class="nav-link" href="user-list.jsp">View user</a>
+      </li> 
+      <li class="nav-item">
+         <form method="POST" action="controller/signout-controller.jsp">
+           <button type="submit" class="btn btn-outline-danger mt-1 ml-1">Sign out</button>
+         </form>
+      </li> 
     </ul>
   </div>  
 </nav>

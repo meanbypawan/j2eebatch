@@ -84,3 +84,7 @@ Mar 02, 2023 18:44:28.83 Fontconfig warning: Directory/file mtime in the future.
 Mar 02, 2023 18:44:59.83 Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
 Mar 02, 2023 18:45:31.72 Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
 Mar 02, 2023 18:46:03.77 Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+
+May 29, 2024 18:35:28.30 NEW SESSION
+May 29, 2024 18:35:28.32 ATTENTION: default value of option mesa_glthread overridden by environment.
+May 29, 2024 18:35:28.39 ATTENTION: default value of option mesa_glthread overridden by environment.
