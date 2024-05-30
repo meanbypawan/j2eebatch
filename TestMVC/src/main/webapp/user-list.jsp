@@ -40,7 +40,10 @@
         	  <td><%=u.getEmail()%></td>
         	  <td><%=u.getAge()%></td>
         	  <td><%=u.getCity().getCityName()%></td>
-        	  <td><button class="btn btn-outline-secondary">Edit</button></td>
+        	  <td>
+        	   <a href="update-user.jsp?id=<%=u.getId()%>">
+        	     <button class="btn btn-outline-secondary">Edit</button></td>
+        	   </a>
         	  <td>
         	  <a href="controller/delete-user.jsp?id=<%=u.getId()%>">
         	    <button class="btn btn-outline-danger">Delete</button>
