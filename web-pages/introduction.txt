@@ -1,0 +1,51 @@
+HTML :- HyperText Markup Language
+  HT :- HyperText (Link Of Page)
+  M :- Markup (Tag)
+  L :- Language
+
+  Developed By Tim Berners Lee
+  It is language of web
+  It is used to create structure of Web Page (Static)
+  ---------------------------------------------------------------
+  Tag Based (142)
+   HTML Tag <Tag>
+   HTML Element = option Tag + content + closing Tag
+   <div>Some Text</div>
+   --------------------------------------
+  1. Inline [span,small,label......]
+    width+height = Wrap content 
+   
+  2. Block [div,p,h1...h6]
+    width : 100%
+    height : auto
+   
+  3. Formatting 
+     <b>, <i>, <u>,<sup>,<sub>, <strong>....
+  
+  4. Media
+      audio, video, img, object, picture
+  5. Heading 
+      h1,h2........h6
+  
+  6. Table
+      <table>, <thead>, <tbody>, <tr>, <th>, <td>,<tfoot>
+  
+  7. header, article,nav,footer...                
+
+  8. Link
+      a
+  9. Listing
+      Ordered List ol 
+      Unordered List ul
+      List Item :- li
+  10: Form
+       form
+  11. Input fileds
+       input [type="text", "password","email", "number","date","color","file","radio","checkbox","button".....]
+       select
+  12: button 
+       <button type="submit"></button>                
+        submit
+        reset
+
+  ..............................................................
