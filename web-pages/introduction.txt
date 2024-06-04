@@ -1,51 +1,123 @@
-HTML :- HyperText Markup Language
-  HT :- HyperText (Link Of Page)
-  M :- Markup (Tag)
-  L :- Language
+#include<iostream>
+using namespace std;
+class Library{
+string book[5];
+string regis[5];
+int count=0;
+public:
+	Library()
+	{
+		printf("Enter the names of avilable books\n");
+		for(int i=0;i<5;i++)
+		{
+			cin>>book[i];
+		}
+		printf("Names of avilable books\n");
+		for(int i=0;i<5;i++)
+		{
+			cout<<book[i]<<"\t";
+		}
+		cout<<endl;
+		}
+		bool lSearch(string,string [],int);
+		void bookIssue(string);
+		void display();
+		void returnBook(string b);
+		
+};
+void Library::display()
+{
+	if(count==0)
+	{
+		cout<<"No book are issued"<<endl;
+		return;
+	}
+	for(int i=0;i<=count;i++)
+	{
+		cout<<regis[i]<<"\t";
+	}
+}
+bool Library::lSearch(string b,string book[],int size)
+{
+	for(int i=0;i<size;i++)
+	{
+		if(book[i]==b)
+		{
+			return true;
+		}
+ 	}
+return false;
+}
+void Library::bookIssue(string b)
+{
+	if(lSearch(b,book,5)==false)
+	{
+		cout<<"Book Not avilable"<<endl;
+	}
+	else if(lSearch(b,regis,count)==true)
+	{
+	cout<<"Book Already issued"<<endl;
+	}
+	else{
+		regis[count]=b;
+		count++;
+		cout<<"Book sucessfully issued"<<endl;
+	}
 
-  Developed By Tim Berners Lee
-  It is language of web
-  It is used to create structure of Web Page (Static)
-  ---------------------------------------------------------------
-  Tag Based (142)
-   HTML Tag <Tag>
-   HTML Element = option Tag + content + closing Tag
-   <div>Some Text</div>
-   --------------------------------------
-  1. Inline [span,small,label......]
-    width+height = Wrap content 
-   
-  2. Block [div,p,h1...h6]
-    width : 100%
-    height : auto
-   
-  3. Formatting 
-     <b>, <i>, <u>,<sup>,<sub>, <strong>....
-  
-  4. Media
-      audio, video, img, object, picture
-  5. Heading 
-      h1,h2........h6
-  
-  6. Table
-      <table>, <thead>, <tbody>, <tr>, <th>, <td>,<tfoot>
-  
-  7. header, article,nav,footer...                
-
-  8. Link
-      a
-  9. Listing
-      Ordered List ol 
-      Unordered List ul
-      List Item :- li
-  10: Form
-       form
-  11. Input fileds
-       input [type="text", "password","email", "number","date","color","file","radio","checkbox","button".....]
-       select
-  12: button 
-       <button type="submit"></button>                
-        submit
-        reset
-
-  ..............................................................
+}
+void Library::returnBook(string b)
+{
+	if(lSearch(b,regis,count==false))
+	{
+		cout<<"Sorry wrong book"<<endl;
+		return;
+	}
+	for(i=0;i<count;i++)
+	{
+		if(regis[i]==b)
+		{
+			break;
+		}
+	}
+while(i<count)
+{
+	regis[i]=regis[i+1];
+	i++;
+}
+count--;
+}
+int main()
+{
+	Library lib;
+	int n;
+	string b;
+	while(true)
+	{
+		cout<<"Press 1 to isuue the book"<<endl;
+		cout<<"Press 2 to return the book"<<endl;
+		cout<<"Press 3 to check issued book"<<endl;
+		cout<<"Press 0 to exit"<<endl;
+		cin>>n;
+		if(n==0)
+		{
+			break;
+		}
+		else if(n==1)
+		{
+			cout<<"Enter the book name you want to issue"<<endl;
+			cin>>b;
+			lib.bookIssue(b);
+		}
+	else if(n==2)
+	{
+			cout<<"Enter the book name you want to return"<<endl;
+			cin>>b;
+			lib.returnBook(b);
+	}
+	else if(n==3)
+	{
+		lib.display();
+	}
+	}
+	return 0;
+}
