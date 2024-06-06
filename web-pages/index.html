@@ -1,0 +1,274 @@
+<html>
+    <head>
+       <style>
+        body{
+            margin:0;
+        }
+        header{
+            height: 60px;
+            background-color: orangered;
+            display: flex;
+            justify-content: space-between;
+        }
+        .logo-text, .option{
+            width: 20%;
+            height: 60px;
+        }
+        .logo-text-child{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .search{
+            width: 50%;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .search input[type="text"]{
+            width: 90%;
+            padding: 5px;;
+        }
+        header div:nth-child(1) h1{
+           margin: 0;
+        }
+        header div:nth-child(1) small{
+            color: white;
+        }
+        .option-child{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .option button{
+            width: 120px;
+            border: 2px solid white;
+            border-radius: 5px;
+            color: white;
+            padding: 5px;
+        }
+        .option button:nth-child(2){
+            background-color: white;
+            color: black;
+        }
+        .option button:nth-child(1){
+            background-color: transparent;
+        }
+        main{
+            padding: 20px;
+        }
+        .row{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            row-gap: 20px;
+        }
+        .card{
+            width: 23%;
+            height: 250px;
+            box-shadow: 0 0 20px black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; 
+        }
+        .card img{
+            width: 100%;
+            height: 150px;
+        }
+        .card small{
+            font-size: 20px;
+        }
+        .card h1{
+            margin: 0;
+        }
+        .card button{
+            width: 90%;
+            margin: auto;
+            margin-top: 10px;
+            background-color: orangered;
+            border: 1px solid orangered;
+            color: white;
+            padding: 5px;
+        }
+        footer{
+            height: 250px;
+            background-color: orangered;
+        }
+        .footer-content{
+            height: 200px;
+            display: flex;
+            padding: 5px;
+            justify-content: space-around;
+        }
+        .footer-line{
+            height: 50px;
+            background-color:black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .footer-content div{
+            width: 30%;
+            height: 180px;
+        }
+        section{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 180px;
+        }
+        .footer-content ul{
+            color: white;
+        }
+        .form-group{
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+        .form-group input[type="text"],textarea{
+            width: 90%;
+        }
+        .form-group button{
+            background-color: transparent;
+            border: 1px solid white;
+            padding: 5px;
+            color: white;
+            font-size: 15px;
+        }
+       </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+               <div class="logo-text logo-text-child">
+                 <h1><b style="color:white;">E</b>-shop</h1>
+                 <small>Shop by single click</small>
+               </div>
+               <div class="search">
+                  <input type="text" placeholder="Search product"/>
+               </div>
+               <div class="option option-child">
+                  <button>Sign in</small>
+                  <button>Sign up</small>
+               </div>
+            </header>
+            <main>
+               <div class="row">
+                  <div class="card">
+                     <img src="./images/watch.jpeg"/>
+                     <h1>Smart Watch</h1>
+                     <small><strong style="color:mediumseagreen">8000</strong> Rs.</small>
+                     <button>Add To Cart</button>
+                   </div>
+                   <div class="card">
+                    <img src="./images/watch.jpeg"/>
+                    <h1>Smart Watch</h1>
+                    <small><strong style="color:mediumseagreen">8000</strong> Rs.</small>
+                    <button>Add To Cart</button>
+                  </div>
+                  <div class="card">
+                    <img src="./images/watch.jpeg"/>
+                    <h1>Smart Watch</h1>
+                    <small><strong style="color:mediumseagreen">8000</strong> Rs.</small>
+                    <button>Add To Cart</button>
+                  </div>
+                  <div class="card">
+                    <img src="./images/watch.jpeg"/>
+                    <h1>Smart Watch</h1>
+                    <small><strong style="color:mediumseagreen">8000</strong> Rs.</small>
+                    <button>Add To Cart</button>
+                  </div>
+                  <div class="card">
+                    <img src="./images/watch.jpeg"/>
+                    <h1>Smart Watch</h1>
+                    <small><strong style="color:mediumseagreen">8000</strong> Rs.</small>
+                    <button>Add To Cart</button>
+                  </div>
+                  <div class="card">
+                   <img src="./images/watch.jpeg"/>
+                   <h1>Smart Watch</h1>
+                   <small><strong style="color:mediumseagreen">8000</strong> Rs.</small>
+                   <button>Add To Cart</button>
+                 </div>
+                 <div class="card">
+                   <img src="./images/watch.jpeg"/>
+                   <h1>Smart Watch</h1>
+                   <small><strong style="color:mediumseagreen">8000</strong> Rs.</small>
+                   <button>Add To Cart</button>
+                 </div>
+                 <div class="card">
+                   <img src="./images/watch.jpeg"/>
+                   <h1>Smart Watch</h1>
+                   <small><strong style="color:mediumseagreen">8000</strong> Rs.</small>
+                   <button>Add To Cart</button>
+                 </div>
+                 <div class="card">
+                    <img src="./images/watch.jpeg"/>
+                    <h1>Smart Watch</h1>
+                    <small><strong style="color:mediumseagreen">8000</strong> Rs.</small>
+                    <button>Add To Cart</button>
+                  </div>
+                  <div class="card">
+                   <img src="./images/watch.jpeg"/>
+                   <h1>Smart Watch</h1>
+                   <small><strong style="color:mediumseagreen">8000</strong> Rs.</small>
+                   <button>Add To Cart</button>
+                 </div>
+                 <div class="card">
+                   <img src="./images/watch.jpeg"/>
+                   <h1>Smart Watch</h1>
+                   <small><strong style="color:mediumseagreen">8000</strong> Rs.</small>
+                   <button>Add To Cart</button>
+                 </div>
+                 <div class="card">
+                   <img src="./images/watch.jpeg"/>
+                   <h1>Smart Watch</h1>
+                   <small><strong style="color:mediumseagreen">8000</strong> Rs.</small>
+                   <button>Add To Cart</button>
+                 </div>
+               </div>
+            </main>
+            <footer>
+               <div class="footer-content">
+                <div>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        <li>Lorem, ipsum dolor.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod.</li>
+                        <li>Lorem, ipsum dolor.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        <li>Lorem, ipsum dolor.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod.</li>
+                        <li>Lorem, ipsum dolor.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                    </ul>
+                </div>
+                <div>
+                    <form style="width:100%">
+                        <section class="form-group">
+                            <input type="text" placeholder="Enter your name"/>
+                            <textarea style="margin-top: 10px;" placeholder="Enter your message" rows="4" cols="20"></textarea>
+                            <button style="margin-top: 10px; width: 90%;">Submit</button>
+                        </section>
+                    </form>
+                </div>
+               </div> 
+               <div class="footer-line">
+                <small>@copyright By: <u>Write your name here</u></small>
+               </div>
+            </footer>
+        </div>
+    </body>
+</html>
