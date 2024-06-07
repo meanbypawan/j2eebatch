@@ -1,0 +1,54 @@
+Javascript :-
+ a. Javascipt is client side as well as server side scripting language.
+ b. Javascript is function oriented, Object oriented multi paradigm
+     scripting language.
+ c. Javascript is dynamically typed programming language.
+
+   c,c++,Java :-   Typed programming language
+    int x;
+    var x;
+d. JS has a capability to convert html into dhtml
+e. JS is programmer friendly.
+f. Js is simple 
+---------------------------------------------------------
+Client Side :- Browser
+
+p1.html
+ <html>
+   <head>
+   </head>
+   <body>
+     <script>
+       /*
+         Javascript code
+       */
+     </script>
+   </body>
+ </html>
+--------------------------------------
+JVM :- Javascript Virtual Machine / Javascript Engine
+ Ex. :--- Chakra
+ ME  :-   Chakra core
+ GC  :--- V8 engine
+ MF  :---Spider Monkey
+
+ JS is single threaded
+ JS is synchornous by default
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
