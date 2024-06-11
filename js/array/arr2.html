@@ -1,0 +1,12 @@
+<script>
+    var arr = [10,20,"Hello",true,10n];
+    // splice as add only
+    arr.splice(2,0,5000,6000,7000);
+    document.write("<br>After splice : "+arr);
+    // splice as remove only
+    arr.splice(2,1); 
+    document.write("<br>After remove : "+arr);
+
+    arr.splice(2,1,"A","B");
+    document.write("<br>After add : "+arr);
+</script>

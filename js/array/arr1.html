@@ -1,0 +1,19 @@
+<script>
+    var arr = [10,20,"Hello",true,10n];
+    /*
+    for(var index in arr)
+      document.write("<br>"+arr[index]);
+    
+    for(var element of arr)
+      document.write("<br>"+element); 
+    */
+    arr.push(100);
+    document.write("<br>"+arr);
+    arr.pop();
+    document.write("<br>After pop : "+arr);
+    arr.unshift(1000);
+    document.write("<br>After unshift : "+arr);
+    arr.shift();
+    document.write("<br>After shift : "+arr);
+    
+</script>

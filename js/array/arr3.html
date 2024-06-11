@@ -1,0 +1,19 @@
+<script>
+  // Higher Order Function  
+  var arr = [1,2,3,4,5,6,7,8,9,10];
+  // o/p : [2,4,6,8,10]
+  var result = arr.filter((element)=>{return element%2==0});
+  document.write(result);
+
+  var element =  arr.find((element)=>{return element == 55});
+  element ? document.write("<br>Found") : document.write("<br>Not found");
+
+  result = arr.map((element)=>{return element * element});
+  document.write("<br>"+result);
+
+  var isExist = arr.some((element)=>{return element == 55});  
+  document.write("<br>"+isExist);
+
+  var index = arr.findIndex((element)=>{return element == 55});
+  document.write("<br>"+index);
+</script>

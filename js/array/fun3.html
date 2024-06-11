@@ -1,0 +1,26 @@
+<script>
+    var customer = {
+        id: 100,
+        cname: "ABC",
+        age: 23,
+        bal : 50000,
+        withdrawal : function(amount){
+            if(amount > this.bal)
+              document.write("<br>Insufficient Balance");
+            else{
+                this.bal -= amount;
+                document.write("<br>Withdrawal success...");
+            }
+        },
+        showDetails: function(){
+            document.write("<br>Id : "+this.id);
+            document.write("<br>Name : "+this.cname);
+            document.write("<br>Age : "+this.age);
+            document.write("<br>Bal : "+this.bal);
+        }
+    }
+
+    customer.showDetails();
+    customer.withdrawal(9000);
+
+</script>

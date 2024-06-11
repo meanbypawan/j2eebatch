@@ -1,0 +1,14 @@
+<script>
+    var arr = [
+        [1,2,3],
+        [4,5,6,7],
+        [8,9]
+    ];
+    arr[1].splice(2,0,100);
+    for(var row of arr){
+        for(var element of row){
+            document.writeln(element);
+        }
+        document.write("<br>");
+    }
+</script>

@@ -1,0 +1,23 @@
+<script>
+    var customerList = [
+        {id:100,cname:"A",age:25},
+        {id:100,cname:"A",age:25},
+        {id:100,cname:"A",age:25},
+        {id:100,cname:"A",age:25}
+    ]
+
+    document.write("<table border='1' width='100%'>");
+    document.write("<tr>");
+    document.write("<td>Id</td>");
+    document.write("<td>Name</td>");
+    document.write("<td>Age</td>");    
+    document.write("<tr>");
+    for(var customer of customerList){
+        document.write("<tr>");
+        document.write("<td>"+customer.id+"</td>");
+        document.write("<td>"+customer.cname+"</td>");
+        document.write("<td>"+customer.age+"</td>");    
+        document.write("<tr>");
+    }            
+    document.write("</table>");
+</script>
