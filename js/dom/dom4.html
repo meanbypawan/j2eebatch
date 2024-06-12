@@ -1,0 +1,22 @@
+<html>
+    <body>
+       <center> 
+        <img id="main" src="./images/micky.jpeg" width="200px" height="200px"/>
+        <button onclick="manipulateImage(1)">+</button>
+        <button onclick="manipulateImage(0)">-</button> 
+       </center>
+       <script>
+         function manipulateImage(n){
+            var mainImage = document.getElementById("main");
+            if(n){
+             mainImage.width += 20;
+             mainImage.height +=20;
+            } 
+            else{
+                mainImage.width -= 20;
+             mainImage.height -=20;
+            }
+         }
+      </script>
+    </body>
+</html>

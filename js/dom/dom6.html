@@ -1,0 +1,100 @@
+<html>
+    <body>
+        <button onclick="changeTable('red','orange')">Red-orange</button>
+        <button onclick="changeTable('blue','pink')">Blue-pink</button>
+        <button onclick="changeTable('yellow','red')">Yellow-red</button>
+        <table id="data-table" border="1" width="100%">
+            <tr>
+                <td>S.no</td>
+                <td>Name</td>
+                <td>Contact</td>
+                <td>Email</td>
+            </tr>
+            <tr>
+                <td>1001</td>
+                <td>ABC</td>
+                <td>000000000</td>
+                <td>abc@gmail.com</td>
+            </tr>
+            <tr>
+                <td>1001</td>
+                <td>ABC</td>
+                <td>000000000</td>
+                <td>abc@gmail.com</td>
+            </tr>
+            <tr>
+                <td>1001</td>
+                <td>ABC</td>
+                <td>000000000</td>
+                <td>abc@gmail.com</td>
+            </tr>
+            <tr>
+                <td>1001</td>
+                <td>ABC</td>
+                <td>000000000</td>
+                <td>abc@gmail.com</td>
+            </tr>
+            <tr>
+                <td>1001</td>
+                <td>ABC</td>
+                <td>000000000</td>
+                <td>abc@gmail.com</td>
+            </tr>
+            <tr>
+                <td>1001</td>
+                <td>ABC</td>
+                <td>000000000</td>
+                <td>abc@gmail.com</td>
+            </tr>
+            <tr>
+                <td>1001</td>
+                <td>ABC</td>
+                <td>000000000</td>
+                <td>abc@gmail.com</td>
+            </tr>
+            <tr>
+                <td>1001</td>
+                <td>ABC</td>
+                <td>000000000</td>
+                <td>abc@gmail.com</td>
+            </tr>
+            <tr>
+                <td>1001</td>
+                <td>ABC</td>
+                <td>000000000</td>
+                <td>abc@gmail.com</td>
+            </tr>
+            <tr>
+                <td>1001</td>
+                <td>ABC</td>
+                <td>000000000</td>
+                <td>abc@gmail.com</td>
+            </tr>
+            <tr>
+                <td>1001</td>
+                <td>ABC</td>
+                <td>000000000</td>
+                <td>abc@gmail.com</td>
+            </tr>
+            <tr>
+                <td>1001</td>
+                <td>ABC</td>
+                <td>000000000</td>
+                <td>abc@gmail.com</td>
+            </tr>
+        </table>
+        <script>
+            function changeTable(evenRowColor,oddRowColor){
+               var table = document.getElementById("data-table");
+               var rows = table.rows;
+               for(var index in rows){
+                if(index%2==0){
+                    rows[index].style.backgroundColor = evenRowColor;    
+                }
+                else
+                  rows[index].style.backgroundColor = oddRowColor;
+               }
+            }
+        </script>
+    </body>
+</html>

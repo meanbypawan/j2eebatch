@@ -1,0 +1,22 @@
+<html>
+    <body>
+       <center> 
+        <img id="main" src="./images/micky.jpeg" width="200px" height="200px"/>
+        <button onclick="incrementSize()">+</button>
+        <button onclick="decrementSize()">-</button> 
+       </center>
+       <script>
+        
+          function incrementSize(){
+           var mainImage = document.getElementById("main");
+           mainImage.width += 20;
+           mainImage.height += 20;
+          }
+          function decrementSize(){
+            var mainImage = document.getElementById("main");
+           mainImage.width -= 20;
+           mainImage.height -= 20;
+          }
+        </script>
+    </body>
+</html>
