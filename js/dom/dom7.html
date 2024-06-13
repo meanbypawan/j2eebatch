@@ -8,6 +8,11 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    small{
+      color: red;
+    }
+  </style>
 </head>
 <body class="container">
    <form class="mt-3 p-3">
@@ -16,9 +21,131 @@
         <input onkeyup="validateUsername()" id="username" type="text" class="form-control"/>
         <small id="usernameError"></small>
       </div>
+      <div class="form-group">
+        <label>Enter password</label>
+        <div class="input-group mb-3">
+          <input onkeyup="validatePassword()" id="password" type="password" class="form-control">
+          <div class="input-group-append">
+            <label onclick="togglePassword(this)" class="btn btn-success" type="submit">Show</label>
+          </div>
+        </div>
+        <small id="passwordError"></small>
+      </div>
+      <div class="form-group">
+        <label>Contact number</label>
+        <input onkeyup="validateContact()" id="contact" type="text" class="form-control"/>
+        <small id="contactError"></small>
+      </div>
+      <div class="form-group">
+        <label>Qualification</label>
+        <select onchange="validateQualification()" id="qualification" class="form-control">
+          <option value="0">select qualification</option>
+          <option value="1">Doctorate</option>
+          <option value="2">Post graduate</option>
+          <option value="3">Graduate</option>
+          <option value="4">Under graduate</option>
+        </select>
+        <small id="qualificationError"></small>
+      </div>
+      <div class="form-group">
+        <label>Gender</label><br>
+        Female <input onchange="validateGender()" type="radio" name="gender" id="rdFemale"/>
+        Male <input onchange="validateGender()" type="radio" name="gender" id="rdMale"/>
+        <br><small id="genderError"></small>
+      </div>
       <button type="submit" class="btn btn-danger" onclick="return validateForm()">Submit</button>
    </form>
    <script>
+    function validateGender(){
+      var status = true;
+      var rdMale = document.querySelector("#rdMale").checked;
+      var rdFemale = document.querySelector("#rdFemale").checked;
+      var genderError = document.querySelector("#genderError");
+      if(rdMale == false && rdFemale == false){
+        status = false;
+        genderError.innerHTML = "select gender";
+      }
+      else
+       genderError.innerHTML = "";
+      return status;
+    }
+    function validateQualification(){
+      var status = true;
+      var qualification = document.querySelector("#qualification").value;
+      var qualificationError = document.querySelector("#qualificationError");
+      if(qualification == 0){
+        status = false;
+        qualificationError.innerHTML = "select qualification";
+      }
+      else
+       qualificationError.innerHTML = "";
+      return status;
+    }
+    function validateContact(){
+      var status = true;
+      var contact = document.querySelector("#contact").value;
+      var contactError = document.querySelector("#contactError");
+      if(contact.trim().length == 0){
+        status = false;
+        contactError.innerHTML = "contact is required";
+      }
+      else if(isNaN(contact)){
+        status = false;
+        contactError.innerHTML = "Only digit allowed";
+      }
+      else if(contact.length != 10){
+        status = false;
+        contactError.innerHTML = "contact must have 10 digit";
+      }
+      else
+       contactError.innerHTML = "";
+      return status;
+    }
+    function togglePassword(button){
+      var passwordField = document.getElementById("password"); 
+      var buttonText = button.innerText;
+      if(buttonText == "Show"){
+        passwordField.type = "text";
+        button.innerText = "Hide";
+      }
+      else{
+        passwordField.type = "password";
+        button.innerText = "Show";
+      }
+    }
+    function validatePassword(){
+      var status = true;
+      var password = document.getElementById("password").value;
+      var passwordError = document.getElementById("passwordError");
+      if(password.length == 0){
+         status = false;
+         passwordError.innerHTML = "password is required";
+      }
+      else if(!isSpecialLetterExist(password)){
+        status = false;
+        passwordError.innerHTML = "Special letter missing";
+      }
+      else if(password.length < 6 || password.length > 10){
+        status = false;
+        passwordError.innerHTML = "Password must be 6 to 10 letter long";
+      }
+      else
+       passwordError.innerHTML = "";
+
+      return status;
+    }
+    function isSpecialLetterExist(password){
+      var status =false;
+      for(var index = 0; index<password.length; index++){
+        var ch = password.charAt(index);
+        if(!(ch>='a' && ch<='z'))
+         if(!(ch>='0' && ch<='9')){
+           status = true;
+           break;
+         }  
+      }
+      return status;
+    }
     function validateUsername(){
         var status = true;
         var username = document.getElementById("username").value;
@@ -34,7 +161,11 @@
     }
     function validateForm(){
         var usernameStatus = validateUsername();
-        if(usernameStatus)
+        var passwordStatus = validatePassword();
+        var contactStatus = validateContact();
+        var qualificationStatus = validateQualification();
+        var genderStatus = validateGender();
+        if(usernameStatus && passwordStatus && contactStatus && qualificationStatus && genderStatus)
           return true;
         return false;  
     }
