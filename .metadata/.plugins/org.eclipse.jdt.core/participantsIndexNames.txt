@@ -3,6 +3,8 @@ INDEX VERSION 1.134
 /TestJson/src/main/java
 /home/administrator/24thApril24AdvJava/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3851593798.index
 /JspApp/src/main/java
+/home/administrator/24thApril24AdvJava/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/664075502.index
+/EShop/src/main/java
 /home/administrator/24thApril24AdvJava/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/369964501.index
 /UseBeanDemo/src/main/java
 /home/administrator/24thApril24AdvJava/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2588073829.index
