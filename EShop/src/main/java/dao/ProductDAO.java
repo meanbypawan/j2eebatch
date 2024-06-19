@@ -2,6 +2,7 @@ package dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.StringJoiner;
 
@@ -10,6 +11,33 @@ import model.Review;
 import service.GetConnection;
 
 public class ProductDAO {
+   public static ArrayList<Product> getProductList(){
+	   ArrayList<Product> al = new ArrayList<Product>();
+	   
+	   try{
+		   Connection con = GetConnection.getConnection();
+		   String sql = "select id,title,price,thumbnail from product";
+		   PreparedStatement ps = con.prepareStatement(sql);
+		   ResultSet rs = ps.executeQuery();
+		   while(rs.next()){
+			   int id = rs.getInt(1);
+			   String title = rs.getString(2);
+			   double price = rs.getDouble(3);
+			   String thumbnail = rs.getString(4);
+			   Product p = new Product();
+			   p.setId(id);
+			   p.setTitle(title);
+			   p.setPrice(price);
+			   p.setThumbnail(thumbnail);
+			   al.add(p);
+		   }
+		   con.close();
+	   }
+	   catch(Exception e) {
+		   e.printStackTrace();
+	   }
+	   return al;
+   }
    public static boolean saveInBulk(ArrayList<Product> al) {
 	   boolean status = true;
 	   Connection con = null;

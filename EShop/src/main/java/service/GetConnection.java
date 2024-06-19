@@ -5,17 +5,16 @@ import java.sql.DriverManager;
 
 public class GetConnection {
   private static Connection con = null;
-  static {
-	  try {
-	    con = establishConnection();
-	  }
-	  catch(Exception e) {
-		  e.printStackTrace();
-	  }
-  }
+//  static {
+//	  try {
+//	    con = establishConnection();
+//	  }
+//	  catch(Exception e) {
+//		  e.printStackTrace();
+//	  }
+//  }
   public static Connection getConnection() throws Exception{
-	  if(con == null)
-		  con = establishConnection();
+	  con = establishConnection();
 	  return con;
   }
   private static Connection establishConnection() throws Exception {
