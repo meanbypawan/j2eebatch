@@ -6,11 +6,48 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.StringJoiner;
 
+import com.mysql.cj.xdevapi.Result;
+
 import model.Product;
 import model.Review;
 import service.GetConnection;
 
 public class ProductDAO {
+	public static Product getProductById(int id) {
+		Product p = null;
+		try(Connection con = GetConnection.getConnection();) {
+			String sql = "select title,price,brand,description,thumbnail,images from product where id = ?";
+			PreparedStatement ps = con.prepareStatement(sql);
+			ps.setInt(1, id);
+			ResultSet rs = ps.executeQuery();
+			if(rs.next()) {
+				String title = rs.getString("title");
+				double price = rs.getDouble("price");
+				String brand = rs.getString("brand");
+				String description = rs.getString("description");
+				String thumbnail = rs.getString("thumbnail");
+				
+				String imagesUrl = rs.getString("images");
+				String imageArray[] = imagesUrl.split(",");
+				ArrayList<String>imageList = new ArrayList<String>();
+				for(String img: imageArray)
+					imageList.add(img);
+				
+				p = new Product();
+				p.setId(id);
+				p.setTitle(title);
+				p.setPrice(price);
+				p.setBrand(brand);
+				p.setDescription(description);
+				p.setThumbnail(thumbnail);
+				p.setImages(imageList);
+			}
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		return p;
+	}
    public static ArrayList<Product> getProductList(){
 	   ArrayList<Product> al = new ArrayList<Product>();
 	   

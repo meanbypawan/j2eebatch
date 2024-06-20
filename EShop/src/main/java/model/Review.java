@@ -6,12 +6,21 @@ public class Review{
     public String date;
     public String reviewerName;
     public String reviewerEmail;
+    private int id;
 	public Review(int rating, String comment, String date, String reviewerName, String reviewerEmail) {
 		this.rating = rating;
 		this.comment = comment;
 		this.date = date;
 		this.reviewerName = reviewerName;
 		this.reviewerEmail = reviewerEmail;
+	}
+	public Review() {}
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
 	}
 	public int getRating() {
 		return rating;

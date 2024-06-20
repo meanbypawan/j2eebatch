@@ -19,7 +19,7 @@ public class GetConnection {
   }
   private static Connection establishConnection() throws Exception {
 	  Class.forName("com.mysql.cj.jdbc.Driver");
-	  con = DriverManager.getConnection("jdbc:mysql://localhost:3306/eshopdb?useSSL=false","root","root");
+	  con = DriverManager.getConnection("jdbc:mysql://localhost:3306/eshopdb?useSSL=false&allowPublicKeyRetrieval=true","root","root");
       return con;
   }
 }
