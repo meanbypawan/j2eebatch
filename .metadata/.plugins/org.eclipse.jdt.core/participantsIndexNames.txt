@@ -11,6 +11,8 @@ INDEX VERSION 1.134
 /ExcDemo/src/main/java
 /home/administrator/24thApril24AdvJava/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/61373946.index
 /TestJsp/src/main/java
+/home/administrator/24thApril24AdvJava/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/463131878.index
+/EShop/src/main/java
 /home/administrator/24thApril24AdvJava/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/4260991164.index
 /EShop/src/main/java
 /home/administrator/24thApril24AdvJava/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/270969111.index

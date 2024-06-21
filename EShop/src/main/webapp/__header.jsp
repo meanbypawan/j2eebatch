@@ -1,3 +1,4 @@
+<%@page import="model.User"%>
 <%@page import="dao.CategoryDAO"%>
 <%@page import="model.Category"%>
 <%@page import="java.util.ArrayList"%>
@@ -10,6 +11,14 @@
     <li class="nav-item">
       <a class="nav-link" href="#">Home</a>
     </li>
+    <%if(User.isLoggedIn(session)==false){ %>
+    <li class="nav-item">
+      <a class="nav-link" href="sign-in.jsp">Sign In</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="sign-up.jsp">Sign UP</a>
+    </li>
+    <%}else{%>
     <li class="nav-item">
       <a class="nav-link" href="#">Products</a>
     </li>
@@ -28,5 +37,6 @@
        <%}%>
       </div>
     </li>
+    <%}%>
   </ul>
 </nav>
