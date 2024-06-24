@@ -25,11 +25,23 @@
          <h3><%=title%></h3>
          <h5 style="margin:0;"><label class="text-success"><%=p.getPrice() %></label> Rs.</h5>
          <a href="view-more.jsp?id=<%=p.getId()%>"><small style="cursor:pointer;" class="text-primary mb-2">View more</small></a>
-         <button class="btn btn-secondary text-white" style="width:90%;">Add To Cart</button>        
+         <button onclick="addToCart('<%=p.getId()%>')" class="btn btn-secondary text-white" style="width:90%;">Add To Cart</button>        
         </div>
        </div>
      <%}%>
  </div>
 </div>
+<script>
+  function addToCart(productId){
+	var xhttp = new XMLHttpRequest();
+	xhttp.open("GET","./add-to-cart.jsp?productId="+productId);
+	xhttp.send();
+	xhttp.onreadystatechange = function(){
+		if(xhttp.readyState == 4){
+			window.alert(xhttp.responseText);
+		}
+	}
+  }
+</script>
 </body>
 </html>
