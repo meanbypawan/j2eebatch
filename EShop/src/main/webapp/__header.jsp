@@ -37,6 +37,11 @@
        <%}%>
       </div>
     </li>
+    <li class="nav-item">
+      <form method="post" action="logout.jsp">
+       <button class="btn btn-danger nav-link">Logout</button>
+      </form>
+    </li>
     <%}%>
   </ul>
 </nav>
